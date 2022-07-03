@@ -3,9 +3,9 @@ USE DB_pilote
 GO
 -- Create table 
 
-IF OBJECT_ID(N'T_employer', N'U') IS NULL BEGIN
+IF OBJECT_ID(N'Employer', N'U') IS NULL BEGIN
 
-    CREATE TABLE T_employer(
+    CREATE TABLE Employer(
         id INT IDENTITY(1,1)
         ,nom NVARCHAR(100)
         ,prenom NVARCHAR(100)
@@ -16,9 +16,9 @@ IF OBJECT_ID(N'T_employer', N'U') IS NULL BEGIN
 
 END;
 
-IF OBJECT_ID(N'T_poste', N'U') IS NULL BEGIN
+IF OBJECT_ID(N'Poste', N'U') IS NULL BEGIN
 
-    CREATE TABLE T_poste(
+    CREATE TABLE Poste(
         id INT IDENTITY(1,1)
         ,libelle_poste NVARCHAR(100)
         ,salaire INTEGER
